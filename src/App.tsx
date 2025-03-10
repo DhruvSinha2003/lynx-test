@@ -3,23 +3,17 @@ import "./App.css";
 import coffee from "./assets/coffee.jpg";
 import lisa from "./assets/lisa.gif";
 import me from "./assets/me.jpg";
-import wow from "./assets/wow.mp4";
+import wowow from "./assets/wow.mp4";
+import Header from "./components/Header.jsx";
 
 export function App() {
+  useEffect(() => {
+    console.log("Video source:", wowow);
+  }, []);
   return (
     <view className="body">
-      <text className="heading">Hello World</text>
-      <image auto-size style="width:100px;" src={coffee} className="coffee" />
-      <image auto-size style="width:100px;" src={lisa} className="lisa" />
-      <image auto-size style="width:100px;" src={me} className="me" />
-      <video
-        auto-size
-        style={{ width: "100px" }}
-        src={wow}
-        className="wow"
-        controls
-        loop
-      />
+      <Header />
+      <image auto-size src={lisa} className="lisa" />
     </view>
   );
 }

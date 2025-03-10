@@ -9,6 +9,9 @@ export function App() {
   return (
     <view className="body">
       <text className="heading">Hello World</text>
+      <image auto-size style="width:100px;" src={coffee} className="coffee" />
+      <image auto-size style="width:100px;" src={lisa} className="lisa" />
+      <image auto-size style="width:100px;" src={me} className="me" />
     </view>
   );
 }

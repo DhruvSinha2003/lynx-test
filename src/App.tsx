@@ -1,10 +1,14 @@
 import { useCallback, useEffect, useState } from "@lynx-js/react";
 import "./App.css";
+import coffee from "./assets/coffee.jpg";
+import lisa from "./assets/lisa.gif";
+import me from "./assets/me.jpg";
+import wow from "./assets/wow.mp4";
 
 export function App() {
   return (
-    <view>
-      <text>Hello World</text>
+    <view className="body">
+      <text className="heading">Hello World</text>
     </view>
   );
 }

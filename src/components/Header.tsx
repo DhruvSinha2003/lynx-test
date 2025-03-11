@@ -10,8 +10,8 @@ const Header = () => {
   }
 
   return (
-    <view style={{ backgroundColor: bg }}>
-      <view bindtap={handleTap} auto-size>
+    <view style={{ backgroundColor: bg, padding: "15px 0" }}>
+      <view className="lisa-container" bindtap={handleTap}>
         <image auto-size src={lisa} className="lisa" />
       </view>
     </view>

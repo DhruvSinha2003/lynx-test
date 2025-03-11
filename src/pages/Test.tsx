@@ -8,29 +8,31 @@ export default function Test() {
 
   return (
     <view className="body" style={{ backgroundColor: bg }}>
-      <scroll-view style="height: 50%; width: 100%">
-        <text className="heading" bindtap={() => navigate("/")} auto-size>
-          Return to Home
-        </text>
-        <text className="heading" bindtap={() => navigate("/")} auto-size>
-          Return to Home
-        </text>
-        <text className="heading" bindtap={() => navigate("/")} auto-size>
-          Return to Home
-        </text>
-        <text className="heading" bindtap={() => navigate("/")} auto-size>
-          Return to Home
-        </text>
-        <text className="heading" bindtap={() => navigate("/")} auto-size>
-          Return to Home
-        </text>
-        <text className="heading" bindtap={() => navigate("/")} auto-size>
-          Return to Home
-        </text>
-        <text className="heading" bindtap={() => navigate("/")} auto-size>
-          Return to Home
-        </text>
-      </scroll-view>
+      <view className="scroll-container">
+        <scroll-view style="height: 100%; width: 100%">
+          <text className="heading" bindtap={() => navigate("/")} auto-size>
+            Return to Home
+          </text>
+          <text className="heading" bindtap={() => navigate("/")} auto-size>
+            Return to Home
+          </text>
+          <text className="heading" bindtap={() => navigate("/")} auto-size>
+            Return to Home
+          </text>
+          <text className="heading" bindtap={() => navigate("/")} auto-size>
+            Return to Home
+          </text>
+          <text className="heading" bindtap={() => navigate("/")} auto-size>
+            Return to Home
+          </text>
+          <text className="heading" bindtap={() => navigate("/")} auto-size>
+            Return to Home
+          </text>
+          <text className="heading" bindtap={() => navigate("/")} auto-size>
+            Return to Home
+          </text>
+        </scroll-view>
+      </view>
     </view>
   );
 }

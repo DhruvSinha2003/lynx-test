@@ -7,9 +7,9 @@ export default function Home() {
 
   return (
     <view className="body" style={{ backgroundColor: "#121212" }}>
-      <view bindtap={() => navigate("/test")} auto-size>
-        <button>Go to Test</button>
-      </view>
+      <text className="heading" bindtap={() => navigate("/test")}>
+        Go to Test
+      </text>{" "}
     </view>
   );
 }

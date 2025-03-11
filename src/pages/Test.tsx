@@ -18,13 +18,32 @@ export default function Test() {
   }
   return (
     <view className="body" style={{ backgroundColor: bg }}>
-      <view bindtap={() => navigate("/")} auto-size>
-        <button>Return to Home</button>
-      </view>
       <view bindtap={handleTap} auto-size>
         <image auto-size src={lisa} className="lisa" />
       </view>
-      <scroll-view style="height: 50%; width: 100%"></scroll-view>
+      <scroll-view style="height: 50%; width: 100%">
+        <text className="heading" bindtap={() => navigate("/")} auto-size>
+          Return to Home
+        </text>
+        <text className="heading" bindtap={() => navigate("/")} auto-size>
+          Return to Home
+        </text>
+        <text className="heading" bindtap={() => navigate("/")} auto-size>
+          Return to Home
+        </text>
+        <text className="heading" bindtap={() => navigate("/")} auto-size>
+          Return to Home
+        </text>
+        <text className="heading" bindtap={() => navigate("/")} auto-size>
+          Return to Home
+        </text>
+        <text className="heading" bindtap={() => navigate("/")} auto-size>
+          Return to Home
+        </text>
+        <text className="heading" bindtap={() => navigate("/")} auto-size>
+          Return to Home
+        </text>
+      </scroll-view>
     </view>
   );
 }

@@ -1,9 +1,19 @@
-import React from "react";
+import type { TouchEvent } from "@lynx-js/types";
+import lisa from "../assets/lisa.gif";
+import { useTheme } from "../ThemeContext.jsx";
 
 const Header = () => {
+  const { bg, toggleBg } = useTheme();
+
+  function handleTap(e: TouchEvent) {
+    toggleBg();
+  }
+
   return (
-    <view>
-      <text className="heading">Intuition</text>
+    <view style={{ backgroundColor: bg }}>
+      <view bindtap={handleTap} auto-size>
+        <image auto-size src={lisa} className="lisa" />
+      </view>
     </view>
   );
 };
